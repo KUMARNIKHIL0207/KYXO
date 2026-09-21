@@ -1,0 +1,28 @@
+{
+  "name": "kyxo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "kyxo-host": "tsx local-host/server.ts",
+    "kyxo": "npm run kyxo-host"
+  },
+  "dependencies": {
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.4.5",
+    "@types/ws": "^8.18.0",
+    "jsdom": "^26.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^8.3.0",
+    "vitest": "^4.1.11"
+  }
+}
